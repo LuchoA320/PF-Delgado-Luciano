@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <title>Cosmo Cars - Vende tu vehiculo</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/images/logoheader.png" alt="Cosmo Cars. Tu proximo auto, a un click de distancia" height="70vh" id="logoHeader">
+
+    </header>
+
+    <nav>
+        <ul id="navHeader">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./tu-cosmo.html">Tu Cosmo</a></li>
+            <li><a href="./usados.html">Vehiculos Usados</a></li>
+            <li><a href="./nuevos.html">Vehiculos 0KM</a></li>
+            <li><a href="./vender.html">Vende tu vehiculo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h2>
+                    ¿Buscas vender tu vehiculo?
+                </h2>
+                <h2>
+                    ¡Completa unos simples datos para comenzar a armar tu publicacion!
+                </h2>
+            </article>
+        </section>
+        <section>
+            <article class="formularioVenta">
+                <form action="" method="post" enctype="text/plain">
+                    <div>
+                        <h3>Marca y Modelo</h3>
+                        <input type="text" name="MarcaModelo" placeholder="Ej: Peugeot 308" required id="ModelBrands">
+                    </div>
+
+                    <div>
+                        <h3>¿A que categoria pertenece?</h3>
+                        <select name="categoriaSell" id="categoriaSell" multiple>
+    
+                                <option value="Sedanes">Sedanes</option>
+                                <option value="Hatchbacks">Hatchbacks</option>
+                                <option value="SUVs">SUVs</option>
+                                <option value="Pick-Ups">Pick-Ups</option>
+                                <option value="Transporte">Transporte</option>
+                                <option value="Camiones">Camiones</option>  
+                        </select>
+                    </div>
+                    <div>
+                        <h3>¿Es nuevo o usado?</h3>
+                        <label for="nuevo">Nuevo 0KM</label>
+                        <input type="radio" name="usedornew" id="nuevo" value="Es 0km" checked="" required>
+
+                        <label for="usado">Usado</label>
+                        <input type="radio" name="usedornew" id="usado" value="Es Usado" required>
+
+                        <button class="botonVenta">Arma tu publicacion</button>
+                     </div>
+
+
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="botonFooter">
+            <a href="">Quienes Somos</a>
+        </div>
+
+        <div class="botonFooter">
+            <a href="">Condiciones</a>
+        </div>
+
+        <div class="botonFooter">
+            <a href="./contacto.html">Contacto y Ayuda</a>
+        </div>
+    </footer>
+
+</body>
+</html>
