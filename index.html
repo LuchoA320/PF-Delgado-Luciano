@@ -12,13 +12,13 @@
 <body>
     <header class="container-fluid">
         <div class="row h-100">
-            <div class="col-md-3">
+            <div class="col-sm-12 col-lg-3 d-flex justify-content-center">
                 <img src="./assets/images/logoheader.png" alt="Cosmo Cars" height="70vh" >
             </div>
-            <section class="col-9 d-flex align-items-center">
+            <section class="col-sm-12 col-lg-9 d-flex align-items-center">
               <div class="container-fluid">
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2 text-center" type="search" placeholder="Busca tu vehiculo ideal" aria-label="Search">
+                  <input class="barraBusqueda form-control me-2 text-center" type="search" placeholder="Busca tu vehiculo ideal" aria-label="Search">
                   <button class="btn btn-outline-light" type="submit">¡Vamos!</button>
                 </form>
               </div>
@@ -56,9 +56,9 @@
     
       <main class="container-fluid min-vh-100 w-100">
 
-        <div class="row pt-2 m-3">
+        <div class="row pt-2">
           <section>
-            <div id="carruselInicio" class="carousel slide bg-secondary rounded-4" data-bs-ride="carousel">
+            <div id="carruselInicio" class="carousel slide bg-secondary rounded-4 m-3" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -66,22 +66,22 @@
               </div>
               <div class="carouselContenido carousel-inner text-center container">
                 <div class="carousel-item active" data-bs-interval="3000">
-                  <img src="./assets/images/0KM/amarokgris.jpeg" class="" width="800px" height="400px" alt="Volkswagen Amarok">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img src="./assets/images/0KM/amarokgris.jpeg" class="" width="800px" height="450px" alt="Volkswagen Amarok">
+                  <div class="carousel-caption d-md-block">
                     <h5>Volkswagen Amarok 2.0 TDI - 2023</h5>
                     <p>$ 16.080.000 - 0 KM</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                  <img src="./assets/images/0KM/logan.jpeg" class="" width="800vh" height="400vh" alt="Renault Logan">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img src="./assets/images/0KM/logan.jpeg" class="" width="800vh" height="450vh" alt="Renault Logan">
+                  <div class="carousel-caption d-md-block">
                     <h5>Renault Logan Zen 1.6 - 2023</h5>
                     <p>$ 5.250.000 0 KM</p>
                   </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                  <img src="./assets/images/0KM/polito.jpg" class="" width="800px" height="400px" alt="Volkswagen Polo">
-                  <div class="carousel-caption d-none d-md-block">
+                  <img src="./assets/images/0KM/polito.jpg" class="" width="800px" height="450px" alt="Volkswagen Polo">
+                  <div class="carousel-caption d-md-block">
                     <h5>Volskwagen Polo MSI 1.6 - 2023</h5>
                     <p>$ 6.350.000 - 0 KM</p>
                   </div>
@@ -98,10 +98,10 @@
             </div>
           </section>
           
-          <section class="d-flex justify-content-center">
+          <section class="cardsPublicaciones d-flex justify-content-around w-100">
             
-              <div class="d-flex flex-wrap">
-                  <div class="card mt-4 m-2" style="width: 16rem;">
+              <div class="d-flex flex-wrap justify-content-center">
+                  <div class="card mt-3 m-2" style="width: 16rem;">
                     <img src="./assets/images/Usados/E90-Lucho.jpg" class="card-img-top" alt="BMW E90" height="200" >
                     <div class="card-body">
                       <h5 class="card-text text-center">BMW Serie 3 325i - 2010</h5>
@@ -109,7 +109,7 @@
                     </div>
                   </div>
                 
-                  <div class="card mt-4 m-2" style="width: 16rem;">
+                  <div class="card mt-3 m-2" style="width: 16rem;">
                     <img src="./assets/images/Usados/megane-gian.jpeg" class="card-img-top" alt="Renault Megane Coupe" height="200">
                     <div class="card-body">
                       <h5 class="card-text text-center">Renault Megane Coupe 1.6 - 2000</h5>
@@ -117,7 +117,7 @@
                     </div>
                   </div>
                 
-                  <div class="card mt-4 m-2" style="width: 16rem;">
+                  <div class="card mt-3 m-2" style="width: 16rem;">
                     <img src="./assets/images/0KM/kangoo.jpg" class="card-img-top" alt="Renault Kangoo" height="200">
                     <div class="card-body">
                       <h5 class="card-text text-center">Renault Kangoo Confort 1.6 - 2023</h5>
@@ -125,7 +125,7 @@
                     </div>
                   </div>
                 
-                  <div class="card mt-4 m-2" style="width: 16rem;">
+                  <div class="card mt-3 m-2" style="width: 16rem;">
                     <img src="./assets/images/0KM/sandero.jpeg" class="card-img-top" alt="Renault Sandero" height="200">
                     <div class="card-body">
                       <h5 class="card-text text-center">Renault Sandero 1.6 Life - 2023</h5>
