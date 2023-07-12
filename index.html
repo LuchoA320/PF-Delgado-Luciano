@@ -35,117 +35,123 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav d-flex justify-content-center align-items-center h-100 w-100">
               <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Tu Cosmo</a>
+                <a class="nav-link text-light" href="./pages/tu-cosmo.html">Tu Cosmo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Vehiculos Usados</a>
+                <a class="nav-link text-light" href="./pages/usados.html">Vehiculos Usados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Vehiculos 0KM</a>
+                <a class="nav-link text-light" href="./pages/nuevos.html">Vehiculos 0KM</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Vende tu vehiculo</a>
+                <a class="nav-link text-light" href="./pages/vender.html">Vende tu vehiculo</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     
-    <main>
-        <section id="sliderInicio">
-            <!-- TRANSORMAR EN SLIDER DE DESTACADOS LUEGO -->
-            <img src="./assets/images/0KM/amarokgris.jpeg" alt="Volkswagen Amarok" width="800px" height="400px">
-        </section>
+      <main class="container-fluid min-vh-100 w-100">
 
-
-        <h3>Vehiculos Destacados</h3>
-
-
-        <section id="publicacionesInicio">
+        <div class="row pt-2 m-3">
+          <section>
+            <div id="carruselInicio" class="carousel slide bg-secondary rounded-4" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carouselContenido carousel-inner text-center container">
+                <div class="carousel-item active" data-bs-interval="3000">
+                  <img src="./assets/images/0KM/amarokgris.jpeg" class="" width="800px" height="400px" alt="Volkswagen Amarok">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Volkswagen Amarok 2.0 TDI - 2023</h5>
+                    <p>$ 16.080.000 - 0 KM</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./assets/images/0KM/logan.jpeg" class="" width="800vh" height="400vh" alt="Renault Logan">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Renault Logan Zen 1.6 - 2023</h5>
+                    <p>$ 5.250.000 0 KM</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <img src="./assets/images/0KM/polito.jpg" class="" width="800px" height="400px" alt="Volkswagen Polo">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Volskwagen Polo MSI 1.6 - 2023</h5>
+                    <p>$ 6.350.000 - 0 KM</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carruselInicio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carruselInicio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+          
+          <section class="d-flex justify-content-center">
             
-            <article class>
-                <img src="./assets/images/0KM/polito.jpg" alt="Volkswagen Polo"
-                height="150" width="250">
-                    <div>
-                        Volskwagen Polo MSI 1.6 - 2023
+              <div class="d-flex flex-wrap">
+                  <div class="card mt-4 m-2" style="width: 16rem;">
+                    <img src="./assets/images/Usados/E90-Lucho.jpg" class="card-img-top" alt="BMW E90" height="200" >
+                    <div class="card-body">
+                      <h5 class="card-text text-center">BMW Serie 3 325i - 2010</h5>
+                      <p class="text-center">U$S 17.900 - 89.000 KM</p>
                     </div>
-                    <h4>$6.350.000 - 0 KM</h4>
-            </article>
-
-            <article class>
-                <img src="./assets/images/0KM/tiguan.jpg" alt="Volkswagen Tiguan"
-                height="150" width="250">
-                <div>
-                    Volskwagen Tiguan TSI 2.0 - 2019
-                </div>
-                <h4>$10.610.750 - 80.000 KM</h4>
-            </article>
-            <article>
-                <img src="./assets/images/Usados/E90-Lucho.jpg" alt="Bmw Serie 3 E90" height="150" width="250">
-                <div>
-                    BMW Serie 3 325i - 2010
-                </div>
-                <h4>U$S 17.900 - 89.000 KM</h4>
-            </article>
-            <article>
-                <img src="./assets/images/0KM/kangoo.jpg" alt="Renault Kangoo 2023" height="150" width="250">
-                <div>
-                    Renault Kangoo Confort 1.6 - 2023
-                </div>
-                <h4>$7.500.000 - 0 KM</h4>
-            </article>
-            <article>
-                <img src="./assets/images/0KM/amarokgris.jpeg" alt="Volkswagen Amarok" height="150" width="250">
-                <div>
-                    Volkswagen Amarok 2.0 TDI - 2023
-                </div>
-                <h4>$ 16.080.000 - 0 KM</h4>
-            </article>
-            <article>
-                <img src="./assets/images/Usados/Volvo-Santi.jpeg" alt="Volvo XC90"
-                height="150" width="250">
-                    <div>
-                        Volvo XC90 D5 2.4 - 2009
+                  </div>
+                
+                  <div class="card mt-4 m-2" style="width: 16rem;">
+                    <img src="./assets/images/Usados/megane-gian.jpeg" class="card-img-top" alt="Renault Megane Coupe" height="200">
+                    <div class="card-body">
+                      <h5 class="card-text text-center">Renault Megane Coupe 1.6 - 2000</h5>
+                      <p class="text-center">$ 5.000.000 - 200.000 KM</p>
                     </div>
-                    <h4>U$S 16.999 - 230.000 KM</h4>
-            </article>
-        </article>
-        <article>
-            <img src="./assets/images/0KM/kangoopax.jpeg" alt="Renault Kangoo 2023" height="150" width="250">
-            <div>
-                Renault Kangoo Confort 1.6 - 2023
-            </div>
-            <h4>$ 7.500.000 - 0 KM</h4>
-        </article>
-        <article>
-            <img src="./assets/images/Usados/megane-gian.jpeg" alt="Renault Megane" height="150" width="250">
-            <div>
-                Renault Megane Coupe 1.6 - 2000
-            </div>
-            <h4>$ 2.000.000 - 159.000 KM</h4>
-        </article>
+                  </div>
+                
+                  <div class="card mt-4 m-2" style="width: 16rem;">
+                    <img src="./assets/images/0KM/kangoo.jpg" class="card-img-top" alt="Renault Kangoo" height="200">
+                    <div class="card-body">
+                      <h5 class="card-text text-center">Renault Kangoo Confort 1.6 - 2023</h5>
+                      <p class="text-center">$ 7.500.000 - 0 KM</p>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-4 m-2" style="width: 16rem;">
+                    <img src="./assets/images/0KM/sandero.jpeg" class="card-img-top" alt="Renault Sandero" height="200">
+                    <div class="card-body">
+                      <h5 class="card-text text-center">Renault Sandero 1.6 Life - 2023</h5>
+                      <p class="text-center">$ 4.407.000 - 0 KM</p>
+                    </div>
+                  </div>
+                
+              
+              </div>
 
-        </section>
 
-    
+          </section>
+           
+        </div>
+
+        
     </main>
 
 
-    <footer>
-        <div class="botonFooter">
-            <a href="">Quienes Somos</a>
-        </div>
+    <footer class="container-fluid">
+      <div class="d-flex align-items-center h-100">
+        <a class="botonFooter btn m-2" href="#">Quienes Somos</a>
+        <a class="botonFooter btn m-2" href="#">Condiciones</a>
+        <a class="botonFooter btn m-2" href="#">Contacto y Ayuda</a>
+      </div>
 
-        <div class="botonFooter">
-            <a href="">Condiciones</a>
-        </div>
-
-        <div class="botonFooter">
-            <a href="./pages/contacto.html">Contacto y Ayuda</a>
-        </div>
     </footer>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
