@@ -10,20 +10,49 @@
     <title>Cosmo Cars - Tu proximo auto, a un click de distancia</title>
 </head>
 <body>
-    <header>
-        <img src="./assets/images/logoheader.png" alt="Cosmo Cars. Tu proximo auto, a un click de distancia" height="70vh" id="logoHeader">
+    <header class="container-fluid">
+        <div class="row h-100">
+            <div class="col-md-3">
+                <img src="./assets/images/logoheader.png" alt="Cosmo Cars" height="70vh" >
+            </div>
+            <section class="col-9 d-flex align-items-center">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 text-center" type="search" placeholder="Busca tu vehiculo ideal" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">¡Vamos!</button>
+                </form>
+              </div>
+            </section>
+        </div>
 
     </header>
 
-    <nav>
-        <ul id="navHeader">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/tu-cosmo.html">Tu Cosmo</a></li>
-            <li><a href="./pages/usados.html">Vehiculos Usados</a></li>
-            <li><a href="./pages/nuevos.html">Vehiculos 0KM</a></li>
-            <li><a href="./pages/vender.html">Vende tu vehiculo</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center h-100 w-100">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Tu Cosmo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Vehiculos Usados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Vehiculos 0KM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Vende tu vehiculo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     
     <main>
         <section id="sliderInicio">
