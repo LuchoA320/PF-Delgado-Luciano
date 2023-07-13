@@ -54,63 +54,188 @@
         </div>
       </nav>
 
-    <main>
-        <section>
-            <article  class="tucosmoint">
-                <h1>
-                    ¡Hola! ¿Buscas un vehiculo perfecto para vos?
-                </h1>
-                <h2>
-                    Te presentamos Tu Cosmo.
-                </h2>
-                <p>
-                    Elegi las opciones que mas se acomoden a lo que buscas, y nos encargamos de buscar un vehiculo que se acople a tus necesidades.
-                </p>
-                <h2>
-                    ¿Comenzamos?
-                </h2>
-
-            </article>
-                <h3>
-                    Encontra tu vehiculo Cosmo ideal.
-                </h3>
-                <article>
-                    <!-- Colocar imagenes por boton luego -->
-                    <button>Sedanes</button>
-                    <button>Hatchback</button>
-                    <button>SUVS</button>
-                    <button>Pick-Ups</button>
-                    <button>Transporte</button>
-                    <button>Trabajo</button>
-                    <button>Camiones</button>
+    <main class="container-fluid">
+        <div class="row">
+            <section>
+                <article  class="m-3 p-4 text-center">
+                    <h1>
+                        ¡Hola! ¿Buscas un vehiculo perfecto para vos?
+                    </h1>
+                    <h2 class="fw-bold">
+                        Te presentamos Tu Cosmo.
+                    </h2>
+                    <h3 class="text-secondary p-3">
+                        Elegi las opciones que mas se acomoden a lo que buscas, y nos encargamos de buscar un vehiculo que se acople a tus necesidades.
+                    </h3>
+                    <h2 class="botonSiguiente shadow btn p-3 m-3">
+                        <a href="#vehiculoCosmo" class="text-light">¿Comenzamos?</a>
+                    </h2>
+    
                 </article>
 
-                <article class="ubicacion">
-                    <h3>
-                        Ubicacion
+                    <h3 id="vehiculoCosmo" class="text-secondary m-3 p-3">
+                        Encontra tu vehiculo Cosmo ideal.
                     </h3>
-                    <input type="text" placeholder="EJ: CABA Zona Norte" required class="zonabusqueda">
-                    <div>
-                        <div>
-                            <label for="radiobusqueda">Radio de Busqueda</label>
-                        </div>
+                    <article class="container-fluid d-flex flex-wrap justify-content-center">
+                        <!-- Colocar imagenes por boton luego -->
+                        <button type="button" class="botonTucosmo shadow btn btn-outline">Sedanes</button>
+                        <button type="button" class="botonTucosmo shadow btn btn-outline">Hatchback</button>
+                        <button type="button" class="botonTucosmo shadow btn btn-outline">SUVS</button>
+                        <button type="button" class="botonTucosmo shadow btn btn-outline">Pick-Ups</button>
+                        <button type="button" class="botonTucosmo shadow btn btn-outline">Transporte</button>
+                        <button type="button" class="botonTucosmo shadow btn btn-outline">Trabajo</button>
+                        <button type="button" class="botonTucosmo shadow btn btn-outline">Camiones</button>
+                    </article>
+                </section>
+                <section class="container-fluid d-flex justify-content-center">
+                    <div class="row">
+                        <article class="col text-center m-5">
+                            <h3 class="text-secondary m-3 p-3">
+                                Ubicacion
+                            </h3>
+    
+                            <label for="ListaLocalidades" class="form-label m-2 text-secondary">Zona De Busqueda</label>
+                            <input class="form-control" list="datalistOptions" id="ListaLocalidades" placeholder="EJ: Ciudad Autonoma de Buenos Aires">
+                            <datalist id="datalistOptions">
+                              <option value="Ciudad Autonoma de Buenos Aires">
+                              <option value="Buenos Aires Zona Norte">
+                              <option value="Buenos Aires Zona Sur">
+                              <option value="Buenos Aires Zona Este">
+                              <option value="Buenos Aires Zona Oeste">
+                              <option value="La Plata">
+                              <option value="Cordoba">
+                              <option value="Santa Fe">
+                              <option value="Rosario">
+                              <option value="Paraná">
+                            </datalist>
+    
+                            <div>    
+                                <label for="radioBusqueda" class="form-label m-2 text-secondary">Radio De Busqueda</label>
+                                <input type="range" class="form-range bg-secondary border rounded-pill" id="radioBusqueda">
+                            </div>
+                        </article>
+                        <article class="col text-center m-5">
+                            <h3 class="text-secondary m-3 p-3">
+                                Rango de Precio
+                            </h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rangoPrecio" id="rangoPrecios1">
+                                <label class="form-check-label" for="rangoPrecios1">
+                                  Hasta $ 1.000.000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rangoPrecio" id="rangoPrecios2" checked>
+                                <label class="form-check-label" for="rangoPrecios2">
+                                  $ 1.000.000 - $ 2.500.000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rangoPrecio" id="rangoPrecios3" checked>
+                                <label class="form-check-label" for="rangoPrecios3">
+                                  $ 2.500.000 - $ 5.000.000
+                                </label>
+                              </div>
+    
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="rangoPrecio" id="rangoPrecios4" checked>
+                              <label class="form-check-label" for="rangoPrecios4">
+                                $ 5.000.000 - $ 10.000.000
+                              </label>
+                            </div>
+    
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rangoPrecio" id="rangoPrecios5" checked>
+                                <label class="form-check-label" for="rangoPrecios5">
+                                  Mas $ 10.000.000
+                                </label>
+                              </div>
+                        </article>
+                            
+                        <article class="col text-center m-5">
+                            <h3 class="text-secondary m-3 p-3">
+                                Condiciones
+                            </h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="condicionesKM" id="CondicionesKM1">
+                                <label class="form-check-label" for="CondicionesKM1">
+                                  Nuevo, 0 Kilometro
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="condicionesKM" id="CondicionesKM2" checked>
+                                <label class="form-check-label" for="CondicionesKM2">
+                                  50.000 KM o Menos
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="condicionesKM" id="CondicionesKM3" checked>
+                                <label class="form-check-label" for="CondicionesKM3">
+                                  50.000 KM - 100.000 KM
+                                </label>
+                              </div>
+    
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="condicionesKM" id="CondicionesKM4" checked>
+                              <label class="form-check-label" for="CondicionesKM4">
+                                100.000 KM - 200.000 KM
+                              </label>
+                            </div>
+    
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="condicionesKM" id="CondicionesKM5" checked>
+                                <label class="form-check-label" for="CondicionesKM5">
+                                  200.000 KM O Mas
+                                </label>
+                              </div>
+                        </article>
+                              
+                        <article class="col text-center m-5">
+                            <h3 class="text-secondary m-3 p-3">
+                                Año
+                            </h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="añoModelo" id="añoModelo1">
+                                <label class="form-check-label" for="añoModelo1">
+                                  Anterior 2000
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="añoModelo" id="añoModelo2" checked>
+                                <label class="form-check-label" for="añoModelo2">
+                                  2000 - 2010
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="añoModelo" id="añoModelo3" checked>
+                                <label class="form-check-label" for="añoModelo3">
+                                  2010 - 2020
+                                </label>
+                              </div>
+    
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="añoModelo" id=añoModelos4" checked>
+                              <label class="form-check-label" for="añoModelo4">
+                                2020 En adelante
+                              </label>
+                            </div>
+                        </article>
+                            
+    
+                            
 
-                        <input type="range" min="0%" max="100%" value="50%" name="radiobusqueda" id="radioBusqueda">
                     </div>
 
-                </article>
+                </section>
 
-                <!-- <article>
-                    COMPLETAR LUEGO
-                    <h3>
-                        Rango de precio
-                    </h3>
-                </article> -->
+                <div class="d-flex justify-content-center">
+                    <h2 class="botonSiguiente shadow btn p-3 m-3 w-100">
+                        ¡Buscar!
+                    </h2>
+                </div>
 
-
-
-
-        </section>
+    
+        </div>
 
     </main>
 
