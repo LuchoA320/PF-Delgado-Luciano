@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-section article h2 {
-    padding: 10px;
-}
-section article p {
-    padding: 10px;
-}
 
 body {
     height: 100vh;
@@ -77,8 +71,6 @@ li {
     list-style-type: none;
 }
 
-/* VENDE TU AUTO */
-
 /* CONTACTO */
 
 .formContacto fieldset {
@@ -99,12 +91,6 @@ li {
     padding: 10px;
     border: 2px solid #3A99F1;
     border-radius: 10px;
-}
-.formContacto h2 {
-    padding: 10px;
-}
-.formContacto p {
-    padding: 10px;
 }
 
 
