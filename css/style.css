@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     height: 100vh;
     font-family: 'Roboto Condensed', sans-serif;
@@ -51,8 +50,6 @@ footer {
     background-color: white;
     
 }
-
-
 
 #radioBusqueda {
     padding: 10px;
