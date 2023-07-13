@@ -55,48 +55,156 @@
       </nav>
 
     <main>
-        <h2>Vehiculos Usados</h2>
-        <section>
-            <aside class="filtrosAside">
-                <h3>
-                    Filtros
-                </h3>
-                <h4>
-                    Categoría
-                </h4>
-                    <ul>
-                        <li><a href="">Sedanes</a></li>
-                        <li><a href="">Hatchbacks</a></li>
-                        <li><a href="">SUVs</a></li>
-                        <li><a href="">Pick-Ups</a></li>
-                        <li><a href="">Utilitarios</a></li>
-                        <li><a href="">Camiones</a></li>
+        <section class="d-flex justify-content-center">
+            <div class="filtrosAside dropdown-center d-lg-none m-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filtros
+                </button>
+                 <ul class="dropdown-menu">
+                    <div class="card-header">
+                        Categoria
+                      </div>
+                    <li class="dropdown-item"><a href="#">Sedanes</a></li>
+                    <li class="dropdown-item"><a href="#">Hatchbacks</a></li>
+                    <li class="dropdown-item"><a href="#">SUVs</a></li>
+                    <li class="dropdown-item"><a href="#">Pick-Ups</a></li>
+                    <li class="dropdown-item"><a href="#">Utilitarios</a></li>
+                    <li class="dropdown-item"><a href="#">Camiones</a></li>
+                    <div class="card-header">
+                      Kilometraje
+                    </div>
+                    <li class="dropdown-item"><a href="#">Menos de 50.000km</a></li>
+                    <li class="dropdown-item"><a href="#">50.000km a 100.000km</a></li>
+                    <li class="dropdown-item"><a href="#">100.000km a 200.000km</a></li>
+                    <li class="dropdown-item"><a href="#">Mas de 200.000km</a></li>
+                    <div class="card-header">
+                      Ubicacion
+                    </div>
+                    <li class="dropdown-item"><a href="#">CABA</a></li>
+                    <li class="dropdown-item"><a href="#">AMBA</a></li>
+                    <li class="dropdown-item"><a href="#">BSAS Interior</a></li>
+                    <li class="dropdown-item"><a href="#">Cordoba</a></li>
+                    <li class="dropdown-item"><a href="#">Santa Fe</a></li>
+                    <li class="dropdown-item"><a href="#">Entre Rios</a></li>
+                  </ul>
+                </div>
+              </div>
+            <h1 class="m-3 text-center">Vehiculos Usados</h1>
+        </section>
+
+        <section class="d-flex">
+            <aside class="filtrosAside text-center m-2 d-flex">
+                <div class="card d-none d-lg-flex" id="filtrosList" style="width: 15rem;">
+                    
+                    <div class="text-center">
+                      Categoria
+                    </div>
+                    <ul class="list-group list-group-flush shadow-sm">
+                      <li class="list-group-item"><a href="#">Sedanes</a></li>
+                      <li class="list-group-item"><a href="#">Hatchbacks</a></li>
+                      <li class="list-group-item"><a href="#">SUVs</a></li>
+                      <li class="list-group-item"><a href="#">Pick-Ups</a></li>
+                      <li class="list-group-item"><a href="#">Utilitarios</a></li>
+                      <li class="list-group-item"><a href="#">Camiones</a></li>
+                      <div class="text-center">
+                        Kilometraje
+                      </div>
+                      <li class="list-group-item"><a href="#">Menos de 50.000km</a></li>
+                      <li class="list-group-item"><a href="#">50.000km a 100.000km</a></li>
+                      <li class="list-group-item"><a href="#">100.000km a 200.000km</a></li>
+                      <li class="list-group-item"><a href="#">Mas de 200.000km</a></li>
+                      <div class="text-center">
+                        Ubicacion
+                      </div>
+                      <li class="list-group-item"><a href="#">CABA</a></li>
+                      <li class="list-group-item"><a href="#">AMBA</a></li>
+                      <li class="list-group-item"><a href="#">BSAS Interior</a></li>
+                      <li class="list-group-item"><a href="#">Cordoba</a></li>
+                      <li class="list-group-item"><a href="#">Santa Fe</a></li>
+                      <li class="list-group-item"><a href="#">Entre Rios</a></li>
                     </ul>
-                <h4>
-                    Kilometros
-                </h4>
-                    <ul>
-                        <li><a href="">Menos de 50.000km</a></li>
-                        <li><a href="">50.000km - 100.000km</a></li>
-                        <li><a href="">100.000km - 200.000km</a></li>
-                        <li><a href="">Mas de 200.000km</a></li>
-                    </ul>
-                <h4>
-                    Ubicacion
-                </h4>
-                    <ul>
-                        <li><a href="">CABA</a></li>
-                        <li><a href="">AMBA</a></li>
-                        <li><a href="">BSAS Interior</a></li>
-                        <li><a href="">Cordoba</a></li>
-                        <li><a href="">Santa Fe</a></li>
-                        <li><a href="">Entre Rios</a></li>
-                    </ul>
+                  </div>
 
             </aside>
+
+            <div class="d-flex flex-wrap justify-content-center align-content-start">
+                <div class="shadow-sm card mt-3" style="width: 16rem;">
+                  <img src="../assets/images/Usados/E90-Lucho.jpg" class="card-img-top" alt="BMW E90" height="200" >
+                  <div class="card-body btn">
+                    <h5 class="card-text text-center">BMW Serie 3 325i - 2010</h5>
+                    <p class="text-center">U$S 19.900 - 89.000 KM</p>
+                    <p class="card-text"><small class="text-secondary">Coronel Brandsen</small></p>
+                  </div>
+                </div>
+              
+                <div class="shadow-sm card mt-3" style="width: 16rem;">
+                  <img src="../assets/images/Usados/megane-gian.jpeg" class="card-img-top" alt="Renault Megane Coupe" height="200">
+                  <div class="card-body btn">
+                    <h5 class="card-text text-center">Renault Megane Coupe 1.6 - 2000</h5>
+                    <p class="text-center">$ 5.000.000 - 200.000 KM</p>
+                    <p class="card-text"><small class="text-secondary">Capitan Bermudez</small></p>
+                  </div>
+                </div>
+              
+                <div class="shadow-sm card mt-3" style="width: 16rem;">
+                  <img src="../assets/images/Usados/Tiida-Lucho.jpeg" class="card-img-top" alt="Renault Kangoo" height="200">
+                  <div class="card-body btn">
+                    <h5 class="card-text text-center">Nissan Tiida Accenta 1.8 - 2011</h5>
+                    <p class="text-center">U$S 7.500 - 130.000 KM</p>
+                    <p class="card-text"><small class="text-secondary">Coronel Brandsen</small></p>
+                  </div>
+                </div>
+              
+                <div class="shadow-sm card mt-3" style="width: 16rem;">
+                  <img src="../assets/images/Usados/Etios-Bauti.jpeg" class="card-img-top" alt="Renault Sandero" height="200">
+                  <div class="card-body btn">
+                    <h5 class="card-text text-center">Toyota Etios 1.5 Platinum - 2016</h5>
+                    <p class="text-center">$ 4.560.000 - 90.310 KM</p>
+                    <p class="card-text"><small class="text-secondary">Merlo, BsAs</small></p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card mt-3 m-" style="width: 16rem;">
+                    <img src="../assets/images/Usados/BMW-Fefo.jpeg" class="card-img-top" alt="BMW E90" height="200" >
+                    <div class="card-body btn">
+                      <h5 class="card-text text-center">BMW Serie 1 2.0 120i - 2007</h5>
+                      <p class="text-center">U$S 12.000 - 150.000 KM</p>
+                      <p class="card-text"><small class="text-secondary">Moron, BsAs</small></p>
+                    </div>
+                  </div>
+                
+                <div class="shadow-sm card mt-3 m-" style="width: 16rem;">
+                  <img src="../assets/images/Usados/Volvo-Santi.jpeg" class="card-img-top" alt="BMW E90" height="200" >
+                  <div class="card-body btn">
+                    <h5 class="card-text text-center">Volvo XC90 D5 2.4 - 2009</h5>
+                    <p class="text-center">U$S 16.999 - 230.000 KM</p>
+                    <p class="card-text"><small class="text-secondary">Coronel Brandsen</small></p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card mt-3 m-" style="width: 16rem;">
+                  <img src="../assets/images/Usados/Clio-Fefo.jpeg" class="card-img-top" alt="BMW E90" height="200" >
+                  <div class="card-body btn">
+                    <h5 class="card-text text-center">Renault Clio 1.2 Work - 2016</h5>
+                    <p class="text-center">$ 2.750.000 142.000 KM</p>
+                    <p class="card-text"><small class="text-secondary">Moron, BsAs</small></p>
+                  </div>
+                </div>
+
+                <div class="shadow-sm card mt-3 m-" style="width: 16rem;">
+                  <img src="../assets/images/Usados/clio-santi-lose.jpg" class="card-img-top" alt="BMW E90" height="200" >
+                  <div class="card-body btn">
+                    <h5 class="card-text text-center">Renault Clio 1.2 Pack Plus - 2011</h5>
+                    <p class="text-center">$ 2.000.000 - 150.000 KM</p>
+                    <p class="card-text"><small class="text-secondary">San Andres, BsAs</small></p>
+                  </div>
+                </div>
+              
+            
+            </div>
         </section>
         <section>
-            <article class="publicacionesUsed">
+            <!-- <article class="publicacionesUsed">
                 <img src="../assets/images/Usados/Clio-Fefo.jpeg" alt="Renault Clio"
                 height="150" width="250">
                     <div>
@@ -158,7 +266,7 @@
                 </div>
                 <h4>$5.599.000 - 80.000 KM</h4>
             </article>
-            
+             -->
 
         </section>
 
