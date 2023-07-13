@@ -55,7 +55,44 @@
       </nav>
 
     <main>
-        <h2>Vehiculos Usados</h2>
+        <section class="d-flex justify-content-center">
+            <div class="filtrosAside dropdown-center d-lg-none m-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filtros
+                </button>
+                 <ul class="dropdown-menu">
+                    <div class="text-center">
+                        Categoria
+                      </div>
+                    <li class="dropdown-item"><a href="#">Sedanes</a></li>
+                    <li class="dropdown-item"><a href="#">Hatchbacks</a></li>
+                    <li class="dropdown-item"><a href="#">SUVs</a></li>
+                    <li class="dropdown-item"><a href="#">Pick-Ups</a></li>
+                    <li class="dropdown-item"><a href="#">Utilitarios</a></li>
+                    <li class="dropdown-item"><a href="#">Camiones</a></li>
+                    <div class="text-center">
+                      Marcas
+                    </div>
+                    <li class="dropdown-item"><a href="#">Volkswagen</a></li>
+                    <li class="dropdown-item"><a href="#">Toyota</a></li>
+                    <li class="dropdown-item"><a href="#">Renault</a></li>
+                    <li class="dropdown-item"><a href="#">Fiat</a></li>
+                    <li class="dropdown-item"><a href="#">BMW</a></li>
+                    <li class="dropdown-item"><a href="#">Ford</a></li>
+                    <div class="text-center">
+                      Ubicacion
+                    </div>
+                    <li class="dropdown-item"><a href="#">CABA</a></li>
+                    <li class="dropdown-item"><a href="#">AMBA</a></li>
+                    <li class="dropdown-item"><a href="#">BSAS Interior</a></li>
+                    <li class="dropdown-item"><a href="#">Cordoba</a></li>
+                    <li class="dropdown-item"><a href="#">Santa Fe</a></li>
+                    <li class="dropdown-item"><a href="#">Entre Rios</a></li>
+                  </ul>
+                </div>
+              </div>
+            <h1 class="m-3 text-center">Vehiculos 0 Kilometro</h1>
+        </section>
         <section class="d-flex">
             <aside class="filtrosAside text-center m-2 d-flex">
                 <div class="card d-none d-lg-flex" id="filtrosList" style="width: 15rem;">
@@ -170,8 +207,8 @@
             </div>
         </section>
         <section>
-            <section>
-                <article aria-label="Page navigation example">
+            <section class="mt-3">
+                <article aria-label="navegacion paginas">
                     <ul class="pagination justify-content-center">
                       <li class="page-item"><a class="page-link disabled" href="#">Anterior</a></li>
                       <li class="page-item"><a class="page-link active" href="#">1</a></li>

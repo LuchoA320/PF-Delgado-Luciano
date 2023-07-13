@@ -56,54 +56,64 @@
     <main>
         <section>
             <article>
-                <h2>
+                <h1 class="text-center m-3 p-4">
                     ¿Buscas vender tu vehiculo?
-                </h2>
-                <h2>
+                </h1>
+                <h2 class="text-center m-3">
                     ¡Completa unos simples datos para comenzar a armar tu publicacion!
                 </h2>
             </article>
         </section>
-        <section>
-            <article class="formularioVenta">
+        <section class="container-fluid w-100 d-flex justify-content-center m5">
                 <form action="" method="post" enctype="text/plain">
                     <div>
-                        <h3>Marca y Modelo</h3>
-                        <input type="text" name="MarcaModelo" placeholder="Ej: Peugeot 308" required id="ModelBrands">
+                        <h3 class="text-secondary m-3">Marca y Modelo</h3>
+                        <div class="mb-3">
+                          <input type="text" class="form-control" id="modelBrands" placeholder="EJ: Peugeot 308">
+                        </div>
                     </div>
 
                     <div>
-                        <h3>¿A que categoria pertenece?</h3>
-                        <select name="categoriaSell" id="categoriaSell" multiple>
-    
-                                <option value="Sedanes">Sedanes</option>
-                                <option value="Hatchbacks">Hatchbacks</option>
-                                <option value="SUVs">SUVs</option>
-                                <option value="Pick-Ups">Pick-Ups</option>
-                                <option value="Transporte">Transporte</option>
-                                <option value="Camiones">Camiones</option>  
+                        <h3 class="text-secondary m-3">¿A que categoria pertenece?</h3>
+                        <select class="form-select" size="6" multiple aria-label="multiple select example">
+                          <option selected>Sedanes</option>
+                          <option value="1">Hatchbacks</option>
+                          <option value="2">SUVs</option>
+                          <option value="3">Pick-Ups</option>
+                          <option value="4">Utilitarios</option>
+                          <option value="5">Camiones</option>
                         </select>
                     </div>
                     <div>
-                        <h3>¿Es nuevo o usado?</h3>
-                        <label for="nuevo">Nuevo 0KM</label>
-                        <input type="radio" name="usedornew" id="nuevo" value="Es 0km" checked="" required>
+                        <h3 class="text-secondary m-3">¿Es nuevo o usado?</h3>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="usedornew" id="new">
+                          <label class="form-check-label" for="new">
+                            Nuevo
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="usedornew" id="used" checked>
+                          <label class="form-check-label" for="used">
+                            Usado
+                          </label>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <h2 class="botonSiguiente shadow btn p-3 m-3">
+                            <a href="#vehiculoCosmo" class="text-light">Arma tu Publicacion</a>
+                        </h2>
+                        </div>
 
-                        <label for="usado">Usado</label>
-                        <input type="radio" name="usedornew" id="usado" value="Es Usado" required>
-
-                        <button class="botonVenta">Arma tu publicacion</button>
                      </div>
 
 
                 </form>
-            </article>
         </section>
 
     </main>
 
     <footer class="container-fluid">
-        <div class="d-flex align-items-center h-100">
+        <div id="botonVender" class="d-flex align-items-center h-100">
           <a class="botonFooter btn m-2" href="#">Quienes Somos</a>
           <a class="botonFooter btn m-2" href="#">Condiciones</a>
           <a class="botonFooter btn m-2" href="./contacto.html">Contacto y Ayuda</a>

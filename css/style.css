@@ -58,6 +58,8 @@ footer {
     
 }
 
+
+
 #radioBusqueda {
     padding: 10px;
     margin: 10px;
@@ -75,78 +77,7 @@ li {
     list-style-type: none;
 }
 
-
-
-
-.publicacionesUsed {
-    /* Publicaciones Usados */
-    position: relative;
-    bottom: 500px;
-    left: 200px;
-    width: 250px;
-    background-color: #D9D9D9;
-    border: 2px #D9D9D9 solid;
-    border-radius: 5px;
-    margin: 10px;
-    display: inline-block;
-}
-.publicacionesNew {
-        /* Publicaciones 0KM */
-        position: relative;
-        bottom: 540px;
-        left: 200px;
-        width: 250px;
-        background-color: #D9D9D9;
-        border: 2px #D9D9D9 solid;
-        border-radius: 5px;
-        margin: 10px;
-        display: inline-block;
-}
-.formularioVenta form div {
-    height: 150px;
-    background-color:#D9D9D9;
-    text-align: center;
-}
-.formularioVenta form div h3 {
-    padding: 10px;
-    margin: 5px;
-    color: #2e2e2e;
-
-}
-
-#ModelBrands {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-    font-size: medium;
-    padding: 10px;
-    width: 500px;
-    border: 2px #2384DE solid;
-    border-radius: 8px;
-
-}
-
 /* VENDE TU AUTO */
-
-.formularioVenta select {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-    font-size: large;
-    padding: 10px;
-    height: 100px;
-    width: 300px;
-    border: 2px #2384DE solid;
-    border-radius: 8px;
-}
-.botonVenta {
-    position: relative;
-    right: 200px;
-    color: white;
-    background-color: #3A99F1;
-    padding: 10px;
-    height: 50px;
-    border: 3px white solid;
-    border-radius: 10px;
-}
 
 /* CONTACTO */
 
@@ -202,6 +133,9 @@ li {
         height: max-content;
     }
     footer div {
+        justify-content: center;
+    }
+    #botonVender {
         justify-content: center;
     }
 }
