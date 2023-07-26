@@ -1,8 +1,20 @@
-#carouselContenido {
-    display: flex;
-    justify-content: center;
+.carouselContenido {
+    div {
+        img {
+            width: 800px;
+            height: 450px;
+        }
+    }
 }
-
+.cardsPublicaciones{
+    div {
+        div {
+            img {
+                height: 200px;
+            }
+        }
+    }
+}
 .botonFooter  {
     color: $blanco;
     background-color: $azulNav;
