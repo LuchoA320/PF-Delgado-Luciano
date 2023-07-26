@@ -1,0 +1,35 @@
+* {
+    @include resetcss
+}
+
+body {
+    height: 100vh;
+    @include roboto;
+    background-color: $grisPlatino;
+}
+
+header {
+    background-color: $azulHeader;
+    div {
+        img {
+            height: 70vh;
+        }
+    }
+    nav {
+        height: 5vh;
+        background-color: $azulNav;
+    }
+} 
+    
+footer {
+    height: 15vh;
+    background-color: $azulHeader;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    @include resetLista
+}

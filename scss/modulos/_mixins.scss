@@ -1,0 +1,14 @@
+@mixin resetcss {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@mixin resetLista {
+    list-style-type: none;
+}
+
+@mixin roboto {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+}

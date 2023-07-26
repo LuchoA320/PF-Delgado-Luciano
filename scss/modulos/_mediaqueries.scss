@@ -1,0 +1,48 @@
+
+
+@media (max-width: 768px) {
+    
+    .carousel-item {
+        img {
+            height: 250px;
+            width: 400px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .carousel-item {
+        img {
+            height: 300px;
+            width: 600px;
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    
+    header {
+        div {
+            section {
+                form {
+                    margin: 10px;
+                }
+            }
+        }
+        nav {
+            height: max-content;
+        }
+    
+    }
+    footer {
+        div {
+            justify-content: center;
+        }
+    }
+
+    #botonVender {
+        justify-content: center;
+    }
+}

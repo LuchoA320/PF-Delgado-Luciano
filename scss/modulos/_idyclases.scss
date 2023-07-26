@@ -1,0 +1,37 @@
+#carouselContenido {
+    display: flex;
+    justify-content: center;
+}
+
+.botonFooter  {
+    color: $blanco;
+    background-color: $azulNav;
+}
+
+.botonSiguiente {
+    color: $blanco;
+    background-color: $azulHeader;
+}
+
+.botonTucosmo {
+    margin: 15px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: $blanco;
+    
+}
+
+#radioBusqueda {
+    padding: 10px;
+    margin: 10px;
+}
+
+.filtrosAside {
+    ul {
+        li {
+            a {
+                color: $grafito ;
+            }
+        }
+    }
+}
