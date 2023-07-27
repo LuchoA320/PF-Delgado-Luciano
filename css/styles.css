@@ -23,6 +23,10 @@ header nav {
   background-color: #2384DE;
 }
 
+main div section article {
+  overflow: hidden;
+}
+
 footer {
   height: 15vh;
   background-color: #3A99F1;
