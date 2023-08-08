@@ -1,4 +1,16 @@
 
+@media (max-width: 576px) {
+    .cardsPublicaciones{
+        div {
+            width: 11rem;
+            img {
+                height: 150px;
+            }
+        }
+    
+}
+
+}
 
 @media (max-width: 768px) {
     
@@ -12,6 +24,7 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
 
+    
     .carousel-item {
         img {
             height: 300px;
@@ -45,4 +58,6 @@
     #botonVender {
         justify-content: center;
     }
+
+    
 }

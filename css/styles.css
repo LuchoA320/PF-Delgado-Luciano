@@ -41,6 +41,9 @@ li {
   height: 450px;
 }
 
+.cardsPublicaciones div {
+  width: 16rem;
+}
 .cardsPublicaciones div img {
   height: 200px;
 }
@@ -54,7 +57,29 @@ li {
   overflow: hidden;
 }
 
+#intVehiculos {
+  height: 20vh;
+}
+
+#btnVehiculos {
+  height: 55vh;
+}
+
+#sectionUsados {
+  overflow: hidden;
+}
+
+#sectionNuevos {
+  overflow: hidden;
+}
+
 .botonSiguiente {
+  color: white;
+  background-color: #3A99F1;
+}
+
+.botonVehiculos {
+  font-size: larger;
   color: white;
   background-color: #3A99F1;
 }
@@ -96,6 +121,14 @@ li {
   padding: 10px;
 }
 
+@media (max-width: 576px) {
+  .cardsPublicaciones div {
+    width: 11rem;
+  }
+  .cardsPublicaciones div img {
+    height: 150px;
+  }
+}
 @media (max-width: 768px) {
   .carousel-item img {
     height: 250px;
