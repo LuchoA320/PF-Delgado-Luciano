@@ -27,6 +27,10 @@ footer {
   height: 15vh;
   background-color: #3A99F1;
 }
+footer h6 {
+  background-color: #2384DE;
+  color: #D9D9D9;
+}
 
 a {
   text-decoration: none;

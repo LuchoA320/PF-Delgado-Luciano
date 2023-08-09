@@ -24,7 +24,12 @@ header {
 footer {
     height: 15vh;
     background-color: $azulHeader;
+    h6 {
+        background-color: $azulNav;
+        color: $grisPlatino;
+    }
 }
+
 
 a {
     text-decoration: none;
