@@ -36,6 +36,10 @@ li {
   list-style-type: none;
 }
 
+#carruselInicio {
+  background-color: #6D6D6D;
+}
+
 .carouselContenido div img {
   width: 800px;
   height: 450px;
@@ -90,6 +94,10 @@ li {
   border-radius: 40px;
   background-color: white;
 }
+.botonTucosmo:focus {
+  background-color: #6D6D6D;
+  color: white;
+}
 
 #radioBusqueda {
   padding: 10px;
@@ -122,6 +130,10 @@ li {
 }
 
 @media (max-width: 576px) {
+  .carouselContenido div img {
+    height: 150px;
+    width: 250px;
+  }
   .cardsPublicaciones div {
     width: 11rem;
   }
@@ -130,13 +142,13 @@ li {
   }
 }
 @media (max-width: 768px) {
-  .carousel-item img {
+  .carouselContenido div img {
     height: 250px;
     width: 400px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .carousel-item img {
+  .carouselContenido div img {
     height: 300px;
     width: 600px;
   }
@@ -153,6 +165,12 @@ li {
   }
   #botonVender {
     justify-content: center;
+  }
+}
+@media (min-width: 1400px) {
+  .carouselContenido div img {
+    height: 600px;
+    width: 950px;
   }
 }
 
