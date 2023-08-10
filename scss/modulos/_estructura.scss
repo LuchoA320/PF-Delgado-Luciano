@@ -24,7 +24,9 @@ header {
 footer {
     height: 15vh;
     background-color: $azulHeader;
+
     p {
+        margin-bottom: 0px;
         background-color: $azulNav;
         color: $grisPlatino;
     }
