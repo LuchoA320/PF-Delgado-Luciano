@@ -1,3 +1,7 @@
+#carruselInicio {
+    background-color: $grisPlatino;
+}
+
 .carouselContenido {
     div {
         img {
@@ -17,13 +21,13 @@
     .cardsPublicaciones{
         div {       
             overflow: hidden;
-            width: 16rem;
+            width: 15rem;
             transition: all 0.6s ease;
             &:hover {
                 transform: scale(1.04);          
             }
             img {
-                height: 200px;
+                height: 180px;
             }
     
         }

@@ -6,7 +6,6 @@
 }
 
 body {
-  height: 100vh;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   background-color: #D9D9D9;
@@ -40,6 +39,10 @@ li {
   list-style-type: none;
 }
 
+#carruselInicio {
+  background-color: #D9D9D9;
+}
+
 .carouselContenido div img {
   width: 800px;
   height: 450px;
@@ -51,14 +54,14 @@ li {
 
 .cardsPublicaciones div {
   overflow: hidden;
-  width: 16rem;
+  width: 15rem;
   transition: all 0.6s ease;
 }
 .cardsPublicaciones div:hover {
   transform: scale(1.04);
 }
 .cardsPublicaciones div img {
-  height: 200px;
+  height: 180px;
 }
 
 .botonFooter {
@@ -189,6 +192,12 @@ li {
   }
 }
 @media (min-width: 1400px) {
+  .cardsPublicaciones div {
+    width: 17rem;
+  }
+  .cardsPublicaciones div img {
+    height: 220px;
+  }
   .carouselContenido div img {
     height: 600px;
     width: 950px;

@@ -77,7 +77,15 @@
 }
 
 @media (min-width: 1400px) {
+    .cardsPublicaciones{
+        div {
+            width: 17rem;
+            img {
+                height: 220px;
+            }
+        }
     
+    }
     .carouselContenido {
         div {
             img {
