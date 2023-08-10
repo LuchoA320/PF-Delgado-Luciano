@@ -15,7 +15,7 @@ body {
 header {
   background-color: #3A99F1;
 }
-header div img {
+header article img {
   height: 70px;
 }
 header nav {
@@ -27,7 +27,7 @@ footer {
   height: 15vh;
   background-color: #3A99F1;
 }
-footer h6 {
+footer p {
   background-color: #2384DE;
   color: #D9D9D9;
 }
@@ -40,17 +40,22 @@ li {
   list-style-type: none;
 }
 
-#carruselInicio {
-  background-color: #6D6D6D;
-}
-
 .carouselContenido div img {
   width: 800px;
   height: 450px;
 }
 
+.sectionPublis {
+  margin-bottom: 50px;
+}
+
 .cardsPublicaciones div {
+  overflow: hidden;
   width: 16rem;
+  transition: all 0.6s ease;
+}
+.cardsPublicaciones div:hover {
+  transform: scale(1.04);
 }
 .cardsPublicaciones div img {
   height: 200px;
@@ -84,12 +89,19 @@ li {
 .botonSiguiente {
   color: white;
   background-color: #3A99F1;
+  transition: all 0.6s ease;
+}
+.botonSiguiente:hover {
+  transform: scale(1.04);
+  background-color: #3A99F1;
+  color: white;
 }
 
 .botonVehiculos {
   font-size: larger;
   color: white;
   background-color: #3A99F1;
+  transition: all 0.6s ease;
 }
 
 .botonTucosmo {

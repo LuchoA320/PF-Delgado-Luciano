@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: $azulHeader;
-    div {
+    article {
         img {
             height: 70px;
         }
@@ -24,11 +24,12 @@ header {
 footer {
     height: 15vh;
     background-color: $azulHeader;
-    h6 {
+    p {
         background-color: $azulNav;
         color: $grisPlatino;
     }
 }
+
 
 
 a {

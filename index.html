@@ -17,21 +17,26 @@
 </head>
 <body>
     <header class="container-fluid">
-        <div class="row h-100">
-            <div class="col-sm-12 col-lg-3 d-flex justify-content-center">
-                <img src="./assets/images/logoheader.png" alt="Cosmo Cars" height="70vh" >
-            </div>
-            <section class="col-sm-12 col-lg-9 d-flex align-items-center">
+        <section class="row h-100">
+          <!-- ==== LOGO ==== -->
+            <article class="col-sm-12 col-lg-3 d-flex justify-content-center">
+              <a href="./index.html">
+                <img src="./assets/images/logoheader.png" alt="Cosmo Cars">
+              </a>
+            </article>
+            <!-- ==== BARRA DE BUSQUEDA ==== -->
+            <article class="col-sm-12 col-lg-9 d-flex align-items-center">
               <div class="container-fluid">
                 <form class="d-flex" role="search">
                   <input class="barraBusqueda form-control me-2 text-center" type="search" placeholder="Busca tu vehiculo ideal" aria-label="Search">
                   <button class="btn btn-outline-light" type="submit">¡Vamos!</button>
                 </form>
               </div>
-            </section>
-        </div>
+            </article>
+        </section>
 
         <nav class="navbar navbar-expand-lg row">
+          <!-- ==== BARRA DE NAVEGACION ==== -->
           <div class="container-fluid">
             <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -63,12 +68,12 @@
     
       <main class="container-fluid min-vh-100 w-100">
 
-        <div class="row pt-2">
+        <h1 class="text-center mt-3">¡Bienvenido, Cosmonauta!</h1>
+
           <section>
-
             <!-- ==== CARRUSEL PUBLICACIONES DESTACADAS ==== -->
-
-            <div id="carruselInicio" class="shadow carousel slide rounded-4 m-5 mt-3 mb-3" data-bs-ride="carousel">
+            <h3 class="text-center text-secondary mt-3">Publicaciones Destacadas</h3>
+            <article id="carruselInicio" class="shadow carousel slide m-5 mt-3 mb-5" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carruselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -105,13 +110,15 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
+            </article>
           </section>
           
           <!-- ==== TARJETAS DE PUBLICACIONES ==== -->
           
-          <section>
+          <section class="sectionPublis">
             
+            <h3 class="text-center text-secondary mt-3">Basado en tu ultima busqueda</h3>
+
               <div class="cardsPublicaciones d-flex flex-wrap justify-content-center">
                   <div class="shadow-sm card m-1 mt-3 mb-3">
                     <img src="./assets/images/Usados/E90-Lucho.jpg" class="card-img-top" alt="BMW E90" >
@@ -145,23 +152,95 @@
                     </div>
                   </div>
                 
-              
+                  <div class="shadow-sm card m-1 mt-3 mb-3">
+                    <img src="./assets/images/webp/Usados/tiida-lucho.webp" class="card-img-top" alt="Nissan Tiida" >
+                    <div class="card-body btn">
+                      <h5 class="card-text text-center">Nissan Tiida Accenta 1.8 - 2011</h5>
+                      <p class="text-center">U$S 7.500 - 130.000 KM</p>
+                    </div>
+                  </div>
+
               </div>
 
 
           </section>
-           
-        </div>
+          
 
+        <section class="container">
+          <h2 class="text-center">Preguntas Frecuentes</h2>
+          <div class="accordion m-3" id="accordionFaq">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqUno" aria-expanded="false" aria-controls="faqUno">
+                  ¿Es seguro comprar en Cosmo Cars?
+                </button>
+              </h2>
+              <div id="faqUno" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <strong>Si, es seguro comprar en Cosmo Cars.</strong> Cada publicación disponible en nuestra página pasa por un riguroso proceso de verificación de seguridad antes de ser visible. Además, llevamos a cabo una comprobación de la identidad de los vendedores y la autenticidad de los documentos de los vehículos.
+                  <div>
+                    Para asegurar un nivel óptimo de seguridad tanto para ti como para los vendedores, te recomendamos que todas tus comunicaciones se realicen a través del chat integrado en nuestra plataforma. Esto nos permite monitorear y garantizar que las interacciones sean transparentes.
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDos" aria-expanded="false" aria-controls="faqDos">
+                  ¿Es seguro vender en Cosmo Cars?
+                </button>
+              </h2>
+              <div id="faqDos" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <strong>Por supuesto.</strong> Al igual que las medidas de seguridad que tomamos para los vendedores, los compradores deberán pasar por un proceso de validación de identidad. También se recomienda establecer todas las comunicaciones a través del chat de la plataforma.
+                  <div>
+                    Tanto vendedores como compradores desempeñan un papel esencial en la creación de un ambiente seguro y confiable.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTres" aria-expanded="false" aria-controls="faqTres">
+                  ¿Que pasa si la otra persona no quiere utilizar el chat de la plataforma?
+                </button>
+              </h2>
+              <div id="faqTres" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  Nuestro chat integrado es una medida de seguridad adicional para poder garantizarte ayuda extra en caso de cualquier inconveniente. Mientras que los procesos de reserva, trámites o pagos se ejecuten a través de nuestra plataforma, estarás respaldado por nuestros <strong>términos y condiciones.</strong> En caso de que la contraparte no quiera seguir estos pasos, recomendamos reportar al usuario o seguir con el proceso bajo riesgo propio.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCuatro" aria-expanded="false" aria-controls="faqCuatro">
+                  ¿Los procesos de reserva estan protegidos?
+                </button>
+              </h2>
+              <div id="faqCuatro" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                <div class="accordion-body">
+                  <strong>¡Claro!</strong> Al elegir hacer tu reserva a través de nuestra plataforma, puedes estar tranquilo. Tu dinero estará protegido en caso de que cambies de opinión o enfrentes algún inconveniente. Estamos aquí para brindarte seguridad y apoyo en cada paso.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="text-center m-4">¿No pudimos resolver tu duda?</h2>
+          <h3 class="text-center m-4">Te invitamos a visitar nuestra pagina de <a href="./pages/contacto.html">Contacto</a></h3>
+        </section>
         
     </main>
 
 
     <footer class="container-fluid">
-      <div class="d-flex align-items-center h-100">
-        <a class="botonFooter btn m-2" href="./pages/error-404.html">Quienes Somos</a>
-        <a class="botonFooter btn m-2" href="./pages/error-404.html">Condiciones</a>
-        <a class="botonFooter btn m-2" href="./pages/contacto.html">Preguntas Frecuentes</a>
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <a class="botonFooter btn m-2" href="./pages/error-404.html">Nosotros</a>
+        <a class="botonFooter btn m-2" href="./pages/error-404.html">Terminos y Condiciones</a>
+        <a class="botonFooter btn m-2" href="./pages/error-404.html">Condiciones Legales</a>
+      </div>
+      <div>
+        <p class="row d-flex justify-content-center">Todos los derechos reservados. Cosmo Cars 2023</p>
       </div>
 
     </footer>
