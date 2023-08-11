@@ -65,11 +65,6 @@ li {
   height: 180px;
 }
 
-.botonFooter {
-  color: white;
-  background-color: #2384DE;
-}
-
 .tucosmoInt {
   overflow: hidden;
 }
@@ -78,16 +73,35 @@ li {
   height: 20vh;
 }
 
-#btnVehiculos {
-  height: 55vh;
-}
-
 #sectionUsados {
   overflow: hidden;
 }
 
 #sectionNuevos {
   overflow: hidden;
+}
+
+#radioBusqueda {
+  padding: 10px;
+  margin: 10px;
+}
+
+.filtrosAside ul li a {
+  color: #6D6D6D;
+}
+
+#error404 img {
+  width: 400px;
+  height: 400px;
+}
+
+.botonFooter {
+  color: white;
+  background-color: #2384DE;
+}
+
+#btnVehiculos {
+  height: 55vh;
 }
 
 .botonSiguiente {
@@ -117,41 +131,6 @@ li {
 .botonTucosmo:focus {
   background-color: #6D6D6D;
   color: white;
-}
-
-#radioBusqueda {
-  padding: 10px;
-  margin: 10px;
-}
-
-.filtrosAside ul li a {
-  color: #6D6D6D;
-}
-
-#error404 img {
-  width: 400px;
-  height: 400px;
-}
-
-.formContacto textarea {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  padding: 10px;
-  border: 2px solid #3A99F1;
-  border-radius: 10px;
-}
-.formContacto fieldset {
-  padding: 10px;
-  border: 2px solid #3A99F1;
-  border-radius: 10px;
-}
-.formContacto input {
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 400;
-  border: 2px solid #3A99F1;
-  border-radius: 10px;
-  width: 200px;
-  padding: 10px;
 }
 
 @media (max-width: 576px) {
