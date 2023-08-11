@@ -1,17 +1,187 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "./modulos/variables";
- *   |         ^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\styles.scss 2:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"./modulos/variables\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\styles.scss 2:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  background-color: #D9D9D9;
+}
+
+header {
+  background-color: #3A99F1;
+}
+header article img {
+  height: 70px;
+}
+header nav {
+  height: 5vh;
+  background-color: #2384DE;
+}
+
+footer {
+  height: 15vh;
+  background-color: #3A99F1;
+}
+footer p {
+  margin-bottom: 0px;
+  background-color: #2384DE;
+  color: #D9D9D9;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+#carruselInicio {
+  background-color: #A9A9A9;
+}
+
+.carouselContenido div img {
+  width: 800px;
+  height: 450px;
+}
+
+.sectionPublis {
+  margin-bottom: 50px;
+}
+
+.cardsPublicaciones div {
+  overflow: hidden;
+  width: 15rem;
+  transition: all 0.6s ease;
+}
+.cardsPublicaciones div:hover {
+  transform: scale(1.04);
+}
+.cardsPublicaciones div img {
+  height: 180px;
+}
+
+.tucosmoInt {
+  overflow: hidden;
+}
+
+#intVehiculos {
+  height: 20vh;
+}
+
+#sectionUsados {
+  overflow: hidden;
+}
+
+#sectionNuevos {
+  overflow: hidden;
+}
+
+#radioBusqueda {
+  padding: 10px;
+  margin: 10px;
+}
+
+.filtrosAside ul li a {
+  color: #6D6D6D;
+}
+
+#error404 img {
+  width: 400px;
+  height: 400px;
+}
+
+.botonFooter {
+  color: white;
+  background-color: #2384DE;
+}
+
+#btnVehiculos {
+  height: 55vh;
+}
+
+.botonSiguiente {
+  color: white;
+  background-color: #3A99F1;
+  transition: all 0.6s ease;
+}
+.botonSiguiente:hover {
+  transform: scale(1.04);
+  background-color: #3A99F1;
+  color: white;
+}
+
+.botonVehiculos {
+  font-size: larger;
+  color: white;
+  background-color: #3A99F1;
+  transition: all 0.6s ease;
+}
+
+.botonTucosmo {
+  margin: 15px;
+  padding: 30px;
+  border-radius: 40px;
+  background-color: white;
+}
+.botonTucosmo:focus {
+  background-color: #6D6D6D;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .carouselContenido div img {
+    height: 150px;
+    width: 250px;
+  }
+  .cardsPublicaciones div {
+    width: 11rem;
+  }
+  .cardsPublicaciones div img {
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .carouselContenido div img {
+    height: 250px;
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .carouselContenido div img {
+    height: 300px;
+    width: 600px;
+  }
+}
+@media (max-width: 992px) {
+  header div section form {
+    margin: 10px;
+  }
+  header nav {
+    height: max-content;
+  }
+  footer div {
+    justify-content: center;
+  }
+  #botonVender {
+    justify-content: center;
+  }
+}
+@media (min-width: 1400px) {
+  .cardsPublicaciones div {
+    width: 17rem;
+  }
+  .cardsPublicaciones div img {
+    height: 220px;
+  }
+  .carouselContenido div img {
+    height: 600px;
+    width: 950px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
